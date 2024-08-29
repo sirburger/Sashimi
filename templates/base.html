@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}{% endblock %}</title>
+  <!-- Bootstrap 5.3.2 CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+</head>
+
+<body>
+
+  <body>
+    {% block navbar %}
+    {% include 'includes/_navbar.html' %}
+    {% endblock %}
+
+    {% if alert_message %}
+    <div class="alert alert-danger text-center alert-dismissible fade show" role="alert"><span><strong>{% block alert %}
+          {{ alert_message }} {% endblock %}</strong> </span>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endif %}
+
+    <div class="container-fluid">
+      {% with messages = get_flashed_messages() %}
+      {% if messages %}
+      {% for message in messages %}
+      <div class="alert alert-warning alert-dismissible fade show text-center" role="alert">
+        {{ message }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      {% endfor %}
+      {% endif %}
+      {% endwith %}
+      {% block content %}
+      {% endblock %}
+      {% block footer %}
+      {% include 'includes/_footer.html' %}
+      {% endblock %}
+
+      {% if message %}
+      <!-- The Modal -->
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">{{ message_header }}</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+              {{ message }}
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+          var myModal = new bootstrap.Modal(document.getElementById('myModal'), {});
+          myModal.show();
+        });
+      </script>
+      {% endif %}
+    </div>
+    {% block scripts %}
+    <!-- Bootstrap 5.3.2 Javascript -->
+    <script src="{{ url_for('static',filename='js/bootstrap.min.js') }}"></script>
+    {% endblock %}
+  </body>
+
+</html>
