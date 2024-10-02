@@ -4,169 +4,175 @@
 
 
 {% block content %}
-    <section><img class="img-fluid d-md-none" src="{{ url_for('static', filename='images/hero-mobile.png')}}"><!-- Start: Hero -->
-        <div data-bss-scroll-zoom="true" data-bss-scroll-zoom-speed="0.3"
-            style="background-image: url(&quot;static/images/hero.png&quot;);background-position: center;background-size: cover;">
-            <!-- Start: Hero Content -->
-            <div
-                class="text-center d-flex flex-column justify-content-center align-items-center py-4 px-3 hero-content">
-                <h1 class="display-1 fw-bold">One app, all<br />things money</h1>
-                <p class="fs-5">From easy money management, to travel perks and investments.<br />Open your account in a
-                    flash</p><button class="btn btn-dark" type="button">Get a free account</button>
-            </div><!-- End: Hero Content -->
-        </div><!-- End: Hero -->
-    </section>
-    <section class="my-5 py-5">
-        <!-- Start: 1 Row 1 Column -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center py-5">
-                    <p class="fw-bold text-muted">Everyday essentials</p>
-                    <h3 class="display-6 fw-bold mb-4">Send, spend and save smarter</h3>
-                    <p>Make day-to-day spending a breeze with all things money in one place</p>
-                </div>
+<section><img class="img-fluid d-md-none"
+        src="{{ url_for('static', filename='images/hero-mobile.png')}}"><!-- Start: Hero -->
+    <div data-bss-scroll-zoom="true" data-bss-scroll-zoom-speed="0.3"
+        style="background-image: url(&quot;static/images/hero.png&quot;);background-position: center;background-size: cover;">
+        <!-- Start: Hero Content -->
+        <div class="text-center d-flex flex-column justify-content-center align-items-center py-4 px-3 hero-content">
+            <h1 class="display-1 fw-bold">One app, all<br />things money</h1>
+            <p class="fs-5">From easy money management, to travel perks and investments.<br />Open your account in a
+                flash</p><button class="btn btn-dark" type="button">Get a free account</button>
+        </div><!-- End: Hero Content -->
+    </div><!-- End: Hero -->
+</section>
+<section class="my-5 py-5">
+    <!-- Start: 1 Row 1 Column -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center py-5">
+                <p class="fw-bold text-muted">Everyday essentials</p>
+                <h3 class="display-6 fw-bold mb-4">Send, spend and save smarter</h3>
+                <p>Make day-to-day spending a breeze with all things money in one place</p>
             </div>
-        </div><!-- End: 1 Row 1 Column -->
-        <!-- Start: 2 Rows 1+2 Columns -->
-        <div class="container">
-            <div class="row mb-4">
-                <div class="col-md-12">
-                    <div class="card text-white"><img class="card-img w-100 d-block d-md-none"
-                            src="{{ url_for('static', filename='images/payments-mobile.jpeg') }}"><img class="card-img w-100 d-block d-none d-md-block"
-                            src="{{ url_for('static', filename='images/payments.jpeg') }}">
-                        <div class="card-img-overlay d-flex flex-column align-items-start p-4 card-content-half p-xl-5">
-                            <h4 class="fs-1 mt-md-auto">Pay and get paid, hassle-free</h4>
-                            <p>Send and request money with a tap, split bills easily with anyone in 200+ countries</p>
-                            <button class="btn btn-primary mt-md-auto" type="button">Explore easy payments&nbsp;<svg
-                                    xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
-                                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
-                                    stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-right">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <path d="M5 12l14 0"></path>
-                                    <path d="M13 18l6 -6"></path>
-                                    <path d="M13 6l6 6"></path>
-                                </svg></button>
-                        </div>
+        </div>
+    </div><!-- End: 1 Row 1 Column -->
+    <!-- Start: 2 Rows 1+2 Columns -->
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <div class="card text-white"><img class="card-img w-100 d-block d-md-none"
+                        src="{{ url_for('static', filename='images/payments-mobile.jpeg') }}"><img
+                        class="card-img w-100 d-block d-none d-md-block"
+                        src="{{ url_for('static', filename='images/payments.jpeg') }}">
+                    <div class="card-img-overlay d-flex flex-column align-items-start p-4 card-content-half p-xl-5">
+                        <h4 class="fs-1 mt-md-auto">Pay and get paid, hassle-free</h4>
+                        <p>Send and request money with a tap, split bills easily with anyone in 200+ countries</p>
+                        <button class="btn btn-primary mt-md-auto" type="button">Explore easy payments&nbsp;<svg
+                                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-right">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M5 12l14 0"></path>
+                                <path d="M13 18l6 -6"></path>
+                                <path d="M13 6l6 6"></path>
+                            </svg></button>
                     </div>
                 </div>
             </div>
-            <div class="row gy-4">
-                <div class="col-md-6">
-                    <div class="card"><img class="card-img w-100 d-block" src="{{ url_for('static', filename='images/savings.jpeg') }}">
-                        <div class="card-img-overlay d-flex flex-column align-items-start p-4 p-xl-5">
-                            <h4 class="fs-1">Earn up to 1.2% annual interest, paid daily</h4><button
-                                class="btn btn-primary link-primary mt-md-auto" type="button">Start saving&nbsp;<svg
-                                    xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
-                                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
-                                    stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-right">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <path d="M5 12l14 0"></path>
-                                    <path d="M13 18l6 -6"></path>
-                                    <path d="M13 6l6 6"></path>
-                                </svg></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card text-white"><img class="card-img w-100 d-block" src="{{ url_for('static', filename='images/rewards.jpeg') }}">
-                        <div class="card-img-overlay d-flex flex-column align-items-start p-4 p-xl-5">
-                            <h4 class="fs-1">Get exclusive Rewards and save as you spend</h4><button
-                                class="btn btn-primary mt-md-auto" type="button">Browse cashback &amp;
-                                discounts&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
-                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="icon icon-tabler icon-tabler-arrow-right">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <path d="M5 12l14 0"></path>
-                                    <path d="M13 18l6 -6"></path>
-                                    <path d="M13 6l6 6"></path>
-                                </svg></button>
-                        </div>
+        </div>
+        <div class="row gy-4">
+            <div class="col-md-6">
+                <div class="card"><img class="card-img w-100 d-block"
+                        src="{{ url_for('static', filename='images/savings.jpeg') }}">
+                    <div class="card-img-overlay d-flex flex-column align-items-start p-4 p-xl-5">
+                        <h4 class="fs-1">Earn up to 1.2% annual interest, paid daily</h4><button
+                            class="btn btn-primary link-primary mt-md-auto" type="button">Start saving&nbsp;<svg
+                                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-right">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M5 12l14 0"></path>
+                                <path d="M13 18l6 -6"></path>
+                                <path d="M13 6l6 6"></path>
+                            </svg></button>
                     </div>
                 </div>
             </div>
-        </div><!-- End: 2 Rows 1+2 Columns -->
-    </section><!-- Start: Footer with Pricing -->
-    <style>
-        body {
-            background: #f3f4f5;
-        }
+            <div class="col-md-6">
+                <div class="card text-white"><img class="card-img w-100 d-block"
+                        src="{{ url_for('static', filename='images/rewards.jpeg') }}">
+                    <div class="card-img-overlay d-flex flex-column align-items-start p-4 p-xl-5">
+                        <h4 class="fs-1">Get exclusive Rewards and save as you spend</h4><button
+                            class="btn btn-primary mt-md-auto" type="button">Browse cashback &amp;
+                            discounts&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="icon icon-tabler icon-tabler-arrow-right">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M5 12l14 0"></path>
+                                <path d="M13 18l6 -6"></path>
+                                <path d="M13 6l6 6"></path>
+                            </svg></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- End: 2 Rows 1+2 Columns -->
+</section><!-- Start: Footer with Pricing -->
+<style>
+    body {
+        background: #f3f4f5;
+    }
 
-        .btn {
-            border-radius: 10px;
-        }
+    .btn {
+        border-radius: 10px;
+    }
 
-        .navbar {
-            background: rgba(241, 242, 244, 0.8);
-            border-bottom: 1px solid #dfe3e7;
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-        }
+    .navbar {
+        background: rgba(241, 242, 244, 0.8);
+        border-bottom: 1px solid #dfe3e7;
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+    }
 
+    .hero-content {
+        background: #f3f4f5;
+    }
+
+    @media (min-width: 768px) {
         .hero-content {
-            background: #f3f4f5;
-        }
-
-        @media (min-width: 768px) {
-            .hero-content {
-                background: transparent;
-                height: 500px;
-            }
-        }
-
-        @media (min-width: 1200px) {
-            .hero-content {
-                height: 600px;
-            }
-        }
-
-        @media (min-width: 1400px) {
-            .hero-content {
-                height: 800px;
-            }
-        }
-
-        .card .btn {
-            border-radius: 20px;
-            padding-left: 16px;
-            margin-left: -16px;
             background: transparent;
-            border-style: none;
+            height: 500px;
         }
+    }
 
-        .card:hover .card-img {
-            transform: scale(1.10);
+    @media (min-width: 1200px) {
+        .hero-content {
+            height: 600px;
         }
+    }
 
-        .card {
-            overflow: hidden;
-            border-radius: 20px;
+    @media (min-width: 1400px) {
+        .hero-content {
+            height: 800px;
         }
+    }
 
-        .card .card-img {
-            transition: all ease .3s;
-        }
+    .card .btn {
+        border-radius: 20px;
+        padding-left: 16px;
+        margin-left: -16px;
+        background: transparent;
+        border-style: none;
+    }
 
-        @media (min-width: 768px) {
-            .card-content-half {
-                width: 50%;
-            }
-        }
+    .card:hover .card-img {
+        transform: scale(1.10);
+    }
 
-        @media (min-width: 1200px) {
-            .container {
-                max-width: 1000px;
-            }
-        }
+    .card {
+        overflow: hidden;
+        border-radius: 20px;
+    }
 
-        .card:hover .btn {
-            background: var(--bs-blue);
-            color: white;
-        }
+    .card .card-img {
+        transition: all ease .3s;
+    }
 
-        .pricing-card .btn {
-            padding-left: 0;
+    @media (min-width: 768px) {
+        .card-content-half {
+            width: 50%;
         }
-    </style>
+    }
+
+    @media (min-width: 1200px) {
+        .container {
+            max-width: 1000px;
+        }
+    }
+
+    .card:hover .btn {
+        background: var(--bs-blue);
+        color: white;
+    }
+
+    .pricing-card .btn {
+        padding-left: 0;
+    }
+</style>
 {% endblock %}
-{% block scripts %}<script src="assets/js/bs-init.js"></script>{% endblock %}
+
+{% block scripts %}
+<script src="assets/js/bs-init.js"></script>
+{% endblock %}
